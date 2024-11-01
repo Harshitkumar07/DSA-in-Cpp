@@ -14,12 +14,14 @@ Each problem is implemented with the following structure:
 
 1. Clone this repository.
 2. Navigate to the `Arrays/` folder.
-3. Each file contains a problem solution. You can run the C++ code to test the solution.
+3. Each file contains a problem solution. You can directly copy-paste the solution to Leetcode.
 
 ## Topics Covered
 
-Some common topics covered using recursion include:
-- **Array & String Recursion** (e.g., reversing arrays, string permutations)
-- **Divide and Conquer** (e.g., merge sort, quick sort)
-- **Backtracking** (e.g., N-Queens, sudoku solver)
-- Other types of problem will be soon updated..
+- **Array manipulation** (e.g., Rotate Array,Move Zeroes,etc.)
+- **Sorting and Searching** (e.g., Search in Rotaed Array,First and Last Position of Element in Sorted Array,etc.)
+- **Two-Pointer Technique** (e.g., Two Sum,Container with Most Water,etc.)
+- **Sliding Windows Techniques** (e.g., Maximum Sum Subarray,Longest Substring,etc.)
+- **Greedy Algorithms** (e.g., Jump Game Gas station,etc.)
+- **Backtracking** (e.g., N-Queens,Subsets,etc.)
+- And many more...
