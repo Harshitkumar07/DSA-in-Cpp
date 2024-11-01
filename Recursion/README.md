@@ -18,7 +18,7 @@ Recursion is a powerful technique where a function calls itself to solve smaller
 ## How to Use
 
 1. Clone this repository.
-2. Navigate to the `recursion/` folder.
+2. Navigate to the `Recursion/` folder.
 3. Each file contains a problem solution. You can run the C++ code to test the solution.
 
 ## Topics Covered
