@@ -5,6 +5,8 @@ This folder contains solutions to various leetcode solutions related to **Array*
 ## Structure
 
 Each problem is implemented with the following structure:
+- **Problem**:Problem statement.
+- **Example Input and Output**: Example input and output of the problem statement.
 - **Solution**: Exact code to solve the problem.
 - **C++ Code**: The C++ implementation of all solution.
 - **Time & Space Complexity**: A breakdown of the time and space complexity for the recursive solution.
