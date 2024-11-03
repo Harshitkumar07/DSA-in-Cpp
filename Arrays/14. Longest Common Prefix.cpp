@@ -1,4 +1,4 @@
-Leetcode Problem 14:-
+**Leetcode Problem 14:-**
 
 Write a function to find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string "". 
@@ -12,7 +12,7 @@ Input: strs = ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix among the input strings.
 
-Code:-
+**Code:-**
 
 class Solution {
 public:
@@ -34,11 +34,11 @@ public:
     }
 };
 
-Time Complexity:
+**Time Complexity:**
 The time complexity is O(n⋅m), where: n is the number of strings in the strs vector.m is the length of the shortest string in strs.
 Each iteration of the outer loop (over strs) compares the current prefix s with the next string in strs character-by-character until a mismatch is found or one of the strings ends.
 In the worst case, we compare up to m characters for each of the n−1 strings, resulting in a complexity of O(n⋅m).
 
-Space Complexity:
+**Space Complexity:**
 The space complexity is O(1), since we only use a fixed amount of extra space to store the current prefix (s) and temporary variables (k and j). 
 No additional data structures are used that grow with the input size.
