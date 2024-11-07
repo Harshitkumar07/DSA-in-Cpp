@@ -38,5 +38,5 @@ The time complexity is O(n) because we iterate through the nums array once to ca
 Thus, the total time complexity is dominated by the single loop, resulting in O(n).
 
 **Space Complexity:**
-The space complexity is O(1) because we only use a fixed amount of extra space for variables (sum, n, and ans). 
+The space complexity is O(1) because we only use a fixed amount of extra space for variables (sum, n, and ans).
 No additional data structures are used, and memory usage does not scale with the input size.
