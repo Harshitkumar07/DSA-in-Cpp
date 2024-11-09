@@ -34,13 +34,10 @@ public:
 };
 
 ** Time Complexity: **
-
-The time complexity is O(n^2), where n is the length of the string s.
-The main loop iterates 2n−1 times because it considers each character and each "gap" between characters as potential centers for palindromes.
+The time complexity is O(n^2), where n is the length of the string s.The main loop iterates 2n−1 times because it considers each character and each "gap" between characters as potential centers for palindromes.
 For each center, we expand outwards to check for the longest palindrome. In the worst case, this expansion can take O(n) time if the palindrome spans the entire string.
 Thus, the total time complexity is O(n×n)=O(n^2).
 
 ** Space Complexity: **
-
 The space complexity is O(1) for auxiliary space, since we use only a fixed number of variables (ans, slen, left, and right). 
 However, the function does return a substring, so the actual space complexity for the output is O(n) if we consider the returned palindrome string.
