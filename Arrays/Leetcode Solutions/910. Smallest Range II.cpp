@@ -38,11 +38,13 @@ public:
 };
 
 ** Time Complexity: **
+
 The time complexity is O(nlogn) due to the sorting step sort(nums.begin(), nums.end()).Sorting the array takes O(nlogn).
 After sorting, the function iterates through nums once (from i = 1 to i = n - 1), which takes O(n).
 Inside the loop, calculating minH, maxH, and updating ans each take O(1) time.
 Thus, the total time complexity is dominated by the sorting step, resulting in O(nlogn), where n is the number of elements in nums.
 
 ** Space Complexity: **
+    
 The space complexity is O(1) because we only use a fixed amount of extra space for variables (n, ans, minH, and maxH). 
 No additional data structures are created, so memory usage remains constant regardless of the input size.
