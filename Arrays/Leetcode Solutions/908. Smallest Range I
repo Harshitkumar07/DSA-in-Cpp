@@ -1,0 +1,26 @@
+** Leetcode Problem 908 :- **
+
+** Code :- **
+
+class Solution {
+public:
+    int smallestRangeI(vector<int>& nums, int k) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        int min = nums[0] + k, max = nums[n - 1] - k;
+        int ans = max - min;
+        if (n == 1 || ans<0) {
+            return 0;
+        }
+        return ans;
+    }
+};
+
+** Time Complexity: **
+The time complexity is O(nlogn) due to the sorting step sort(nums.begin(), nums.end()).Sorting the array takes O(nlogn).
+Calculating min, max, and ans, as well as checking the condition (n == 1 || ans < 0), all take O(1) time.
+Therefore, the overall time complexity is dominated by the sorting step, resulting in (nlogn), where n is the number of elements in nums.
+
+** Space Complexity: **
+The space complexity is O(1) since we use only a fixed amount of extra space for variables (n, min, max, and ans).
+No additional data structures are created, so memory usage remains constant regardless of the input size.
