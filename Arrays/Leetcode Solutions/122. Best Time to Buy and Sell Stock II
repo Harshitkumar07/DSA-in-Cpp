@@ -1,0 +1,25 @@
+** Leetcode Problem 122:- **
+
+** Code :- **
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int min = INT_MAX, maxProfit = 0;
+        for (int i = 1; i < prices.size(); i++) {
+            if (prices[i] > prices[i - 1]) {
+                maxProfit = maxProfit + (prices[i] - prices[i - 1]);
+            }
+        }
+        return maxProfit;
+    }
+};
+
+** Time Complexity: **
+The time complexity is O(n), where n is the number of elements in prices.
+The function iterates through the prices array once, comparing each price to the previous one.
+Each comparison and potential addition takes constant time, resulting in a linear time complexity, O(n).
+
+** Space Complexity: **
+The space complexity is O(1) because we only use a fixed amount of extra space for variables (min and maxProfit).
+No additional data structures are used, so memory usage remains constant regardless of the size of prices.
