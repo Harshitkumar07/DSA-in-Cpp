@@ -1,0 +1,35 @@
+** Leetcode Problem 2016 :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    int maximumDifference(vector<int>& nums) {
+        int n = nums.size(), left = 0, right = 1, maxDiff = -1;
+        if (n < 2) {
+            return -1;
+        }
+        while (right < n) {
+            if (nums[left] < nums[right]) {
+                maxDiff = max(maxDiff, nums[right] - nums[left]);
+                right++;
+            } else {
+                left = right;
+                right++;
+            }
+        }
+        return maxDiff;
+    }
+};
+
+** Time Complexity: **
+The time complexity is O(n), where n is the number of elements in nums.
+
+The function uses a two-pointer approach, with the right pointer iterating through each element of nums once.
+In each iteration, we either update maxDiff or move left to right when we find a higher minimum value, keeping each pointer moving only once through the array.
+Thus, the entire process requires a single traversal, resulting in a time complexity of O(n).
+
+** Space Complexity: **
+The space complexity is O(1) since the function only uses a fixed number of variables (n, left, right, and maxDiff). No additional data structures are used, so memory usage is constant.
