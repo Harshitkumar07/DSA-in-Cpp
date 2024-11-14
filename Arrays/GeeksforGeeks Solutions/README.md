@@ -19,10 +19,10 @@ Each problem is implemented with the following structure:
 
 ## Topics Covered
 
-- **Array manipulation** (e.g., Rotate Array,Move Zeroes,etc.)
-- **Sorting and Searching** (e.g., Search in Rotaed Array,First and Last Position of Element in Sorted Array,etc.)
-- **Two-Pointer Technique** (e.g., Two Sum,Container with Most Water,etc.)
-- **Sliding Windows Techniques** (e.g., Maximum Sum Subarray,Longest Substring,etc.)
-- **Greedy Algorithms** (e.g., Jump Game Gas station,etc.)
-- **Backtracking** (e.g., N-Queens,Subsets,etc.)
+- **Array manipulation** (e.g., Rotating an Array,Move All Zeroes to End,etc.)
+- **Sorting and Searching** (e.g., Binary Search,Sort 0's,1's and 2's etc.)
+- **Two-Pointer Technique** (e.g., Trapping Rain Water,Container with Most Water,etc.)
+- **Sliding Windows Techniques** (e.g., Kadane's Algoritm,Stock Buy and Sell,etc.)
+- **Greedy Algorithms** (e.g., Jump Game, Gas station,etc.)
+- **Backtracking** (e.g., Jumping Geek,Subsets,etc.)
 - And many more...
