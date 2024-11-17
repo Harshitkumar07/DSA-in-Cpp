@@ -22,32 +22,26 @@ Output: [0,1]
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<pair<int, int>> ans;
-        int n = nums.size();
-        for (int i = 0; i < n; i++) {
-            ans.push_back({nums[i], i});
-        }
-        sort(ans.begin(), ans.end());
-        int i = 0;
-        int j = nums.size() - 1;
-        while (i < j) {
-            if (ans[i].first + ans[j].first > target) {
-                j--;
-            } else if (ans[i].first + ans[j].first < target) {
-                i++;
-            } else {
-                return {ans[i].second, ans[j].second};
+        unordered_map<int, int> map;
+        vector<int> ans;
+        for (int i = 0; i < nums.size(); i++) {
+            int first = nums[i], second = target - first;
+            if (map.find(second) != map.end()) {
+                ans.push_back(i);
+                ans.push_back(map[second]);
+                break;
             }
+            map[first] = i;
         }
-        return {};
+        return ans;
     }
 };
 
-** Time Complexity: **
-Creating the ans Array: The function first pushes each element from nums along with its index into the ans vector, which takes O(n) time, where n is the number of elements in nums.
-Sorting: Sorting the ans vector takes O(nlogn).
-Two-Pointer Search: After sorting, the two-pointer search to find the target sum takes O(n), as each pointer moves only once from the start and end toward the middle.
-Overall, the time complexity is dominated by the sorting step, resulting in O(nlogn).
+** Time Complexity **
 
-** Space Complexity: **
-The space complexity is O(n) due to the additional ans vector, which stores each element and its index from the original array.
+Iterating Through the Array: The algorithm iterates through the array once, which takes O(n), where n is the number of elements in the array.
+Hash Map Operations: Each lookup and insertion operation in an unordered_map takes O(1) on average.
+Thus, the overall time complexity is: O(n)
+    
+** Space Complexity **
+The algorithm uses an unordered_map to store the elements and their indices. In the worst case, all elements of the array are stored in the map. Thus, the space complexity is: O(n)
