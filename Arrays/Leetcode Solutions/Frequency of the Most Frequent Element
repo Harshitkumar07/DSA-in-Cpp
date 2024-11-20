@@ -1,0 +1,24 @@
+** Leetcode Problems 1838:- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    long long maxFrequency(vector<int>& nums, long long k) {
+        sort(nums.begin(), nums.end());
+        long long left = 0, right = 0, n = nums.size(), ans = 0, maxFreq = 0;
+        while (right < n) {
+            maxFreq += nums[right];
+            while (nums[right] * (right - left + 1) > maxFreq + k) {
+                maxFreq -= nums[left];
+                left += 1;
+            }
+            ans = max(ans, right - left + 1);
+            right = right + 1;
+        }
+        return ans;
+    }
+};
+
