@@ -1,0 +1,27 @@
+** Leetcode Problem 46 :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    void perRec(vector<int>& nums, int currIndex,
+                    vector<vector<int>>& ans) {
+        if (currIndex == nums.size() - 1) {
+            ans.push_back(nums);
+            return;
+        }
+        for (int index = currIndex; index < nums.size(); index++) {
+            swap(nums[currIndex], nums[index]);
+            perRec(nums, currIndex + 1, ans);
+            swap(nums[currIndex], nums[index]);
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<vector<int>> ans;
+        perRec(nums, 0, ans);
+        return ans;
+    }
+};
+
