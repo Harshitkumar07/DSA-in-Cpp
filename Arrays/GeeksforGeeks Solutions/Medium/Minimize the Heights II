@@ -18,3 +18,18 @@ class Solution {
     }
 };
 
+** Time Complexity :- **
+
+Sorting the Array:
+Sorting the input array of size n takes O(nlogn).
+
+Iterating through the Array:
+A single loop iterates through the array from the second element to the last element (n−1 iterations).
+Time complexity: O(n).
+Overall Time Complexity: O(nlogn)+O(n)=O(nlogn)
+
+** Space Complexity :- **
+
+The algorithm uses only a constant amount of extra space for variables such as minH, maxH, and ans.
+The sorting operation modifies the array in-place, so no additional space is used.
+Overall Space Complexity: O(1)
