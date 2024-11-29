@@ -1,0 +1,20 @@
+** Problem :- **
+
+
+
+** Code :- **
+
+class Solution {
+  public:
+    int largest(vector<int> &arr) {
+        int max = arr[0];
+        int size = arr.size();
+        for(int i=1;i<size;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+};
+
