@@ -1,0 +1,22 @@
+** Leetcode Probelm 2739 :-**
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    int distanceTraveled(int mainTank, int additionalTank) {
+        int ans = 0;
+        while (mainTank != 0) {
+            ans++;
+            mainTank--;
+            if (ans % 5 == 0 && additionalTank != 0) {
+                mainTank++;
+                additionalTank--;
+            }
+        }
+        return ans * 10;
+    }
+};
+
