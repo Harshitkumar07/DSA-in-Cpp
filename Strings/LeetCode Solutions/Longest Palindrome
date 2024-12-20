@@ -1,0 +1,22 @@
+** Leetcode Problem 409 :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    int longestPalindrome(string s) {
+        int count = 0;
+        sort(s.begin(), s.end());
+        for(int i = 0; i < s.length()-1; i++){
+            if(s[i] == s[i+1]){
+                count++;
+                i++;
+            }
+        }
+        int total = (count * 2);
+        return total == s.length() ? total : total + 1;
+    }
+};
+
