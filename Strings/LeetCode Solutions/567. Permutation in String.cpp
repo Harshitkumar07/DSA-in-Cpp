@@ -45,3 +45,21 @@ public:
     }
 };
 
+** Time Complexity :- **
+    
+Outer Loop:
+The outer loop runs over the length of string s2 (denoted as n).
+Inner Loop:
+For every iteration of the outer loop, the inner loop iterates over the length of s1 (denoted as m) to populate the frequency array widFreq.
+Frequency Comparison (isFreqSame):
+This function compares two frequency arrays of size 26. The cost of comparison is O(26), which is constant time.
+Overall, the worst-case scenario involves O(n×m) operations for building frequency arrays, and each comparison costs O(1).
+Total Time Complexity: O(n×m)
+
+** Space Complexity :- **
+    
+Frequency Arrays:
+The algorithm uses two frequency arrays, each of size 26, to store letter frequencies for s1 and the current window in s2.
+Other Variables:
+Uses only a few integer variables to track indices and window size.
+Overall Space Complexity: O(26)=O(1)
