@@ -1,0 +1,37 @@
+** Leetcode Problem 79:- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    bool dfs(int i, int j, vector<vector<char>>& board, string word, int w) {
+        int n = board.size(), m = board[0].size();
+        if (w == word.size())
+            return true;
+        if (i < 0 || i >= n || j < 0 || j >= m || board[i][j] != word[w])
+            return false;
+        char c = board[i][j];
+        board[i][j] = '.';
+        if (dfs(i + 1, j, board, word, w + 1) || dfs(i - 1, j, board, word, w + 1) ||
+            dfs(i, j - 1, board, word, w + 1) || dfs(i, j + 1, board, word, w + 1))
+            return true;
+        board[i][j] = c;
+        return false;
+    }
+    bool exist(vector<vector<char>>& board, string word) {
+        int n = board.size(), m = board[0].size();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == word[0]) {
+                    int w = 0;
+                    if (dfs(i, j, board, word, w))
+                        return true;
+                }
+            }
+        }
+        return false;
+    }
+};
+
