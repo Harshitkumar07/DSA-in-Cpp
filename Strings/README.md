@@ -4,6 +4,8 @@ This folder contains solutions to a wide variety of coding challenges focused on
 
 The solutions provided here are sourced from popular competitive programming platforms like **Leetcode**, **GeeksforGeeks (GFG)**, and others. Each problem is addressed with a structured approach, offering clear problem descriptions, example scenarios, and optimized C++ implementations. Whether you're a beginner looking to strengthen your understanding of string algorithms or an experienced coder preparing for competitive programming or interviews, this collection aims to cater to all skill levels.
 
+---
+
 ## Structure
 
 Each problem is implemented with the following structure:
@@ -14,6 +16,8 @@ Each problem is implemented with the following structure:
 - **Time & Space Complexity**: A detailed breakdown of the time and space complexity of the solution.
 - **Best and Worst Time Complexity**: An analysis of the best-case and worst-case time complexities.
 - **Example Input and Output after Compilation**: Demonstrates how the input and output appear when the code is executed.
+
+---
 
 ## How to Use
 
@@ -81,3 +85,5 @@ This repository also includes solutions for miscellaneous string problems, ensur
 ## Contribution
 
 Feel free to add more solutions or improve existing ones by following the structure described above. Make sure to add proper comments and examples for better understanding.
+
+---
