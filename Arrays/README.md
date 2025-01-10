@@ -12,7 +12,7 @@ Each problem is implemented with the following structure:
 - **Solution**: Exact code to solve the problem.
 - **C++ Code**: The C++ implementation of all solution.
 - **Time & Space Complexity**: A breakdown of the time and space complexity for the recursive solution.
-- **Best and Worst Time Complexity**: Also provide best and worsat time complexity of code.
+- **Best and Worst Time Complexity**: Also provide best and worse time complexities of implemented code.
 - **Example input and output**: Example of input and output that how it looks like after compilation. 
 
 ## How to Use
