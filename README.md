@@ -1,6 +1,6 @@
 📚 DSA in C++: Comprehensive Problem-Solving Solutions
 
-Welcome to DSA in C++, a collection of data structures and algorithms (DSA) problem solutions. This repository focuses on solving a variety of coding challenges using different methods in C++, including recursive, iterative, dynamic programming, and more.
+Welcome to DSA in C++, a collection of data structures and algorithms (DSA) problem solutions. This repository focuses on solving a variety of coding challenges using different methods in C++, including arrays , recursive, strings, and more.
 
 🔍 Whether you're preparing for coding interviews, enhancing your problem-solving skills, or deepening your knowledge of DSA, this repository is designed for you!
 
@@ -18,7 +18,7 @@ Welcome to DSA in C++, a collection of data structures and algorithms (DSA) prob
 
 📂 Folder Structure - 
 
-◾ Each problem is organized in its own folder with multiple solution files (e.g., recursive, iterative, dynamic programming, etc.).
+◾ Each problem is organized in its own folder with multiple solution files (e.g., arrays , recursive, strings , etc.).
 
 ◾ A README file is provided for each problem, explaining the solution in detail.
 
@@ -32,7 +32,7 @@ This repository serves as a resource for those learning and practicing DSA conce
 
 ◾ Time and space complexity analysis
 
-◾ Different methods used to solve the problem (e.g., recursive, iterative, dynamic programming, etc.)
+◾ Different methods used to solve the problem (e.g., arrays , recursive, strings, etc.)
 
 
 📖 How to Use This Repository - 
@@ -55,7 +55,7 @@ This repository serves as a resource for those learning and practicing DSA conce
 
 🚀 Features -
 
-◾ Multiple Coding Methods: Solutions to problems are provided using different coding techniques such as recursion, iteration, greedy algorithms, and more.
+◾ Multiple Coding Methods: Solutions to problems are provided using different coding techniques such as arrays , recursive, strings, and more.
 
 ◾ Structured Code: Each problem is well-structured and documented for clarity.
 
@@ -66,7 +66,9 @@ This repository serves as a resource for those learning and practicing DSA conce
 
 This repository covers a wide range of methos and topics, including:
 
+◾ Arrays
 ◾ Recursion 
+◾ Strings
 
 More topics will be added soon!
 
