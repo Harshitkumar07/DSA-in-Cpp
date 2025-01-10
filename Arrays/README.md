@@ -4,6 +4,8 @@ This folder contains a collection of solutions to a wide range of coding problem
 
 The problems in this repository are sourced from popular coding platforms like **Leetcode**, **GeeksforGeeks (GFG)**, and others. Each solution is carefully structured to help you understand and implement efficient algorithms. Whether you're learning about arrays for the first time or aiming to refine your skills, this repository provides a comprehensive resource.
 
+---
+
 ## Structure
 
 Each problem is implemented with the following structure:
@@ -14,6 +16,8 @@ Each problem is implemented with the following structure:
 - **Time & Space Complexity**: A breakdown of the time and space complexity for the recursive solution.
 - **Best and Worst Time Complexity**: Also provide best and worse time complexities of implemented code.
 - **Example input and output**: Example of input and output that how it looks like after compilation. 
+
+---
 
 ## How to Use
 
@@ -89,3 +93,5 @@ Explore more complex tasks:
 
 Feel free to contribute additional solutions or enhance existing ones. 
 Ensure that your contributions follow the structure and guidelines described above, and include proper comments and examples for clarity.
+
+---
