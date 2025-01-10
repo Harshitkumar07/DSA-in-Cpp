@@ -60,3 +60,7 @@ Break strings into smaller components for analysis:
 This repository also includes solutions for miscellaneous string problems, ensuring a comprehensive coverage of all concepts.
 
 ---
+
+## Contribution
+
+Feel free to add more solutions or improve existing ones by following the structure described above. Make sure to add proper comments and examples for better understanding.
