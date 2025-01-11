@@ -4,6 +4,7 @@ Welcome to DSA in C++, a collection of data structures and algorithms (DSA) prob
 
 🔍 Whether you're preparing for coding interviews, enhancing your problem-solving skills, or deepening your knowledge of DSA, this repository is designed for you!
 
+---
 
  📚 Table of Contents - 
 
@@ -15,12 +16,15 @@ Welcome to DSA in C++, a collection of data structures and algorithms (DSA) prob
 - [Topics covered](#topics-covered)
 - [Contributing](#contributing)
 
+---
 
 📂 Folder Structure - 
 
 ◾ Each problem is organized in its own folder with multiple solution files (e.g., arrays , recursive, strings , etc.).
 
 ◾ A README file is provided for each problem, explaining the solution in detail.
+
+---
 
 📝 Overview - 
 
@@ -34,6 +38,7 @@ This repository serves as a resource for those learning and practicing DSA conce
 
 ◾ Different methods used to solve the problem (e.g., arrays , recursive, strings, etc.)
 
+---
 
 📖 How to Use This Repository - 
 
@@ -53,6 +58,8 @@ This repository serves as a resource for those learning and practicing DSA conce
    ./output
    ```
 
+---
+
 🚀 Features -
 
 ◾ Multiple Coding Methods: Solutions to problems are provided using different coding techniques such as arrays , recursive, strings, and more.
@@ -61,6 +68,7 @@ This repository serves as a resource for those learning and practicing DSA conce
 
 ◾ Optimized Solutions: Efforts are made to provide the most efficient solutions possible, with complexity analysis provided for each approach.
 
+---
 
 📚 Topics Covered - 
 
@@ -72,6 +80,7 @@ This repository covers a wide range of methos and topics, including:
 
 More topics will be added soon!
 
+---
 
 🤝 Contributing -
 
@@ -83,6 +92,7 @@ Contributions are welcome! If you'd like to add new recursive problems or improv
 4. Push to the branch (`git push origin feature/your-feature-name`)
 5. Open a pull request
 
+---
 
 Star ⭐ the repo if you find it useful!
 
