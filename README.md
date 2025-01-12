@@ -48,7 +48,7 @@ This repository serves as a resource for those learning and practicing DSA conce
    ```
    
 2. **Navigate to Specific Problems**: The repository is organized by problem categories. Each problem is located in its respective folder with the solution in a `.cpp` file. For example:
-   - `problems/factorial.cpp`
+   - `Recursion/Factorial.cpp`
    
 3. **Understand the Solution**: Each solution is well-commented for clarity. Make sure to read through the comments for a better understanding of the recursive logic used.
 
