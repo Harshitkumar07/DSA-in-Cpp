@@ -1,0 +1,29 @@
+** Leetcode Problem :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    bool backspaceCompare(string s, string t) {
+        int i = s.size() - 1, j = t.size() - 1;
+        while (i >= 0 || j >= 0) {
+            int backCounts = 0, backCount = 0;
+            while (i >= 0 && (s[i] == '#' || backCounts > 0)) {
+                backCounts += (s[i] == '#') ? 1 : -1;
+                i--;
+            }
+            while (j >= 0 && (t[j] == '#' || backCount > 0)) {
+                backCount += (t[j] == '#') ? 1 : -1;
+                j--;
+            }
+            if (i >= 0 && j >= 0 && s[i] != t[j] || (i >= 0) != (j >= 0))
+                return false;
+            i--;
+            j--;
+        }
+        return true;
+    }
+};
+
