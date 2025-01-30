@@ -1,0 +1,26 @@
+** Leetcode Problem :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    string convert(string s, int numRows) {
+        if (numRows == 1 || numRows >= s.size())
+            return s;
+        string ans;
+        int cycleLen = 2 * numRows - 2;
+        for (int row = 0; row < numRows; ++row) {
+            for (int j = 0; j + row < s.size(); j += cycleLen) {
+                ans += s[j + row];
+                if (row != 0 && row != numRows - 1 &&
+                    j + cycleLen - row < s.size()) {
+                    ans += s[j + cycleLen - row];
+                }
+            }
+        }
+        return ans;
+    }
+};
+
