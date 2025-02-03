@@ -1,0 +1,28 @@
+** Leetcode Problem :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    int isPrefixOfWord(string sentence, string searchWord) {
+        int n = sentence.length(), s = searchWord.length();
+        int idx = 1, i = 0;
+        while (i < n) {
+            while (i < n && sentence[i] == ' ') {
+                i++;
+            }
+            int start = i;
+            while (i < n && sentence[i] != ' ') {
+                i++;
+            }
+            if (i - start >= s && sentence.substr(start, s) == searchWord) {
+                return idx;
+            }
+            idx++;
+        }
+        return -1;
+    }
+};
+
