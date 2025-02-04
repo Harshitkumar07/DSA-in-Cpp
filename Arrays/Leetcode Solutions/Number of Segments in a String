@@ -1,0 +1,25 @@
+** Leetcode Problem 434 :- **
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    int countSegments(string s) {
+        int cnt = 0;
+        bool segment = false;
+        for (char c : s) {
+            if (c != ' ') {
+                if (!segment) {
+                    segment = true;
+                    cnt++;
+                }
+            } else {
+                segment = false;
+            }
+        }
+        return cnt;
+    }
+};
+
