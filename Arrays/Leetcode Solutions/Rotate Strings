@@ -1,0 +1,24 @@
+** Leetcode Problem : -**
+
+
+
+** Code :- **
+
+class Solution {
+public:
+    bool rotateString(string s, string goal) {
+        if (s.size() != goal.size()) {
+            return false;
+        }
+        int i = 0, j = s.size() - 1;
+        while (i <= j) {
+            if (s.substr(i, goal.size()) == goal) {
+                return true;
+            }
+            s.push_back(s[i]);
+            i++;
+        }
+        return false;
+    }
+};
+
